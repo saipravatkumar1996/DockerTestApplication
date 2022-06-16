@@ -4,7 +4,7 @@ stages{
   stage('Build'){
      steps{
       echo "Building the Code......."
-      bat "mvn clear"
+      bat "mvn clean"
     }
   }
 stage('Test'){
