@@ -1,6 +1,6 @@
 pipeline{
 agent any
-  def app
+
 stages{
   stage('Build'){
      steps{
@@ -29,7 +29,7 @@ stage('Deploy'){
   
   stage('release'){
     steps{
-          app = docker.build("pravat199665/dockertestapp") 
+          docker.build("pravat199665/dockertestapp") 
     }
   }
 
