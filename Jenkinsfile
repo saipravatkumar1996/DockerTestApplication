@@ -33,14 +33,7 @@ stage('Deploy'){
         app = docker.build("pravat199665/javaapp")
     }
   }
-   stage('Test image') {
-        steps{
-		app.inside {
-            echo "Tests passed"
-        }
-	}
-        
-    }
+
 }
 
 }
