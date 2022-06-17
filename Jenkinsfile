@@ -4,7 +4,8 @@ node {
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
 
-        checkout scm
+        /*checkout scm*/
+	    echo "Build"
     }
 
     stage('Build image') {
