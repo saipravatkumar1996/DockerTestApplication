@@ -25,14 +25,7 @@ stage('Deploy'){
      bat "mvn install"
     }
   }
-  
-  stage('BuildImpage'){
-     steps{
-      /* This builds the actual image */
 
-        app = docker.build("pravat199665/javaapp")
-    }
-  }
 
 }
 
