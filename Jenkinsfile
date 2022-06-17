@@ -1,5 +1,6 @@
 pipeline{
 agent any
+  def app
 stages{
   stage('Build'){
      steps{
@@ -23,6 +24,12 @@ stage('Deploy'){
      steps{
       echo "deploy the project......."
      bat "mvn install"
+    }
+  }
+  
+  stage('release'){
+    steps{
+          app = docker.build("pravat199665/dockertestapp") 
     }
   }
 
