@@ -26,14 +26,6 @@ stage('Deploy'){
      bat "mvn install"
     }
   }
-  
-  stage('release'){
-    steps{
-          docker.build("pravat199665/dockertestapp") 
-    }
-  }
-
-
 }
 
 }
