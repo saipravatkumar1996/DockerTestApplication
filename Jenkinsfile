@@ -30,6 +30,7 @@ stage('Deploy'){
     steps{
       bat "docker build -f Dockerfile -t jenkisnappfile ."
     }
+  }
 }
 
 }
