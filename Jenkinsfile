@@ -26,6 +26,10 @@ stage('Deploy'){
      bat "mvn install"
     }
   }
+  stage('Release'){
+    steps{
+      bat "docker build -f Dockerfile -t jenkisnappfile ."
+    }
 }
 
 }
