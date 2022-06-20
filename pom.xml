@@ -53,6 +53,19 @@
 				<finalName>user-mysql</finalName>
 				</configuration>
 			</plugin>
+			 <plugin>  
+            <!-- Build an executable JAR -->  
+            <groupId>org.apache.maven.plugins</groupId>  
+            <artifactId>maven-jar-plugin</artifactId>  
+            <version>3.8.5</version>  
+            <configuration>  
+                <archive>  
+                    <manifest>  
+                        <mainClass>com.example.demo.DockerTestApplication</mainClass>  
+                    </manifest>  
+                </archive>  
+            </configuration>  
+        </plugin> 
 		</plugins>
 	</build>
 
