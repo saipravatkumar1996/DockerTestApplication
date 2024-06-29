@@ -1,5 +1,8 @@
 pipeline{
 agent any
+ environment {
+        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-11.0.12'
+    }
 
 stages{
   stage('Build'){
